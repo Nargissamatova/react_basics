@@ -1,6 +1,7 @@
 // RENDER LISTS
 
 function List(props) {
+  const category = props.category;
   const itemList = props.items;
 
   // SORTING
@@ -15,7 +16,12 @@ function List(props) {
       {lowCalfruit.name}: &nbsp; {lowCalfruit.calories}
     </li>
   ));
-  return <ol>{listItem}</ol>;
+  return (
+    <>
+      <h3>{category}</h3>
+      <ol>{listItem}</ol>
+    </>
+  );
 }
 
 export default List;

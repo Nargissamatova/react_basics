@@ -1,7 +1,7 @@
 import "./App.css";
 import Greeting from "./UserGreeting";
 import List from "./Lists";
-import fruits from "./Lists";
+import Button from "./Counter";
 
 function App() {
   const fruits = [
@@ -34,6 +34,7 @@ function App() {
       <Greeting isLoggedIn={true} name="Nargis" />
       <List items={fruits} category="Fruits" />
       <List items={vegetables} category="Vegetables" />
+      <Button />
     </>
   );
 }
