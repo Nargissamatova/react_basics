@@ -17,3 +17,7 @@ function App() {
 }
 
 export default App;
+
+/*
+<Card city="Helsinki" student={student} />  for example I have some props (check Card.jsx)
+*/
