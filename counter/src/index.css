@@ -1,0 +1,15 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.welcome-message {
+    background-color: rgb(65, 201, 65);
+    color: white;
+    padding: 1rem;
+}
+
+.login-prompt {
+    background-color: red;
+    color: white;
+    padding: 1rem;
+}
