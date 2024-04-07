@@ -1,11 +1,11 @@
-import { useState } from "react";
 import "./App.css";
+import Greeting from "./UserGreeting";
 
 function App() {
   return (
-    <div>
-      <button>Click me</button>
-    </div>
+    <>
+      <Greeting isLoggedIn={true} name="Nargis" />
+    </>
   );
 }
 
