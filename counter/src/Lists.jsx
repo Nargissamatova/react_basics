@@ -14,8 +14,17 @@ function List() {
     { name: "peach", calories: 39 },
   ];
 
-  const listItem = fruits.map((fruit, index) => (
-    <li key={index}>{fruit.name}</li>
+  // SORTING
+  fruits.sort((a, b) => a.name.localeCompare(b.name)); // ALPHABETICAL ORDER
+  fruits.sort((a, b) => a.calories - b.calories); // NUMERIC ORDER
+
+  // FILTERING LOW CALORIES FRUITS
+  const lowCalFruits = fruits.filter((fruit) => fruit.calories < 50);
+
+  const listItem = lowCalFruits.map((lowCalfruit, index) => (
+    <li key={index}>
+      {lowCalfruit.name}: &nbsp; {lowCalfruit.calories}
+    </li>
   ));
   return <ol>{listItem}</ol>;
 }
