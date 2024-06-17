@@ -28,7 +28,7 @@ function App() {
     { name: "celery", calories: 6 },
     { name: "lettuce", calories: 5 },
   ];
-
+  const cars = ["Ford", "BMW", "Toyota"];
   return (
     <>
       <Greeting isLoggedIn={true} name="Nargis" />

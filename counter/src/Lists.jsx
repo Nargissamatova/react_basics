@@ -3,6 +3,8 @@
 function List(props) {
   const category = props.category;
   const itemList = props.items;
+  console.log(itemList);
+  console.log(typeof itemList);
 
   // SORTING
   itemList.sort((a, b) => a.name.localeCompare(b.name)); // ALPHABETICAL ORDER
