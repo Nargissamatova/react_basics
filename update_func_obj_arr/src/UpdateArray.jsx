@@ -12,6 +12,8 @@ function UpdateArray() {
   function handleRemoveFood(index) {
     // Filter all elements where current i(index) does not equal the index that we receive
     // setFoods(foods.filter((element, i) => i !== index)); element is ignored, so undescore is used
+
+    //creates a new array that includes all elements of foods except the one at the specified index.
     setFoods(foods.filter((_, i) => i !== index));
   }
 
