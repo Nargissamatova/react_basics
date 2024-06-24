@@ -17,6 +17,7 @@
 // #5 Clean up when a component unmounts (removing component from DOM)
 
 import { useState, useEffect } from "react";
+import MyComponent from "./MyComponent";
 import "./App.css";
 
 function App() {
@@ -31,7 +32,7 @@ function App() {
 
   useEffect(() => {
     document.title = `Count: ${count} ${color}`;
-  }, [count, color]);
+  }, [count, color]); // any time one of these value change, perform this side code
 
   function addCount() {
     setCount((c) => c + 1);
@@ -51,6 +52,7 @@ function App() {
         <button onClick={subtractCount}>Subtract</button>
         <button onClick={changeColor}>Change color</button>
       </div>
+      <MyComponent />
     </>
   );
 }
