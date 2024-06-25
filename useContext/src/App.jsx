@@ -14,9 +14,14 @@
 // 2. const value = useContext(MyContext);
 
 import "./App.css";
+import ComponentA from "./ComponentA";
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <ComponentA />
+    </>
+  );
 }
 
 export default App;
